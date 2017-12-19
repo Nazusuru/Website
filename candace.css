@@ -33,19 +33,16 @@ a {
 
 /* big iamge! background-color is the color over the image background */
 #main {
-  background-color: rgba(0, 0, 30, 0.7);
-  position: relative;
-  height: 450px;
 }
 
 /* CSS hack that puts image in background don't worry about it for now */
 #main::after {
   content: "";
-  background: url("http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-san-francisco.jpg");
+  background: url("pics/website.png");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  opacity: 0.5;
+  opacity: 1;
   top: 0;
   left: 0;
   bottom: 0;
@@ -60,6 +57,7 @@ a {
 #main_container {
   display: block;
   position: absolute;
+  text-align: center;
   top: 50%;
   transform: translateY(-50%);
   margin: 0 15%;
@@ -67,9 +65,8 @@ a {
 }
 
 #main_content{
-  display: inline-block;
   text-align: center;
-  max-width: 60%;
-  margin-right: 30px;
-  margin-bottom: 15px;
+  max-width: 100%;
+  margin-bottom: 5px;
+  margin-left: 700px;
 }
