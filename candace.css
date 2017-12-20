@@ -1,6 +1,6 @@
 body {
   font-size: 32px;
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Give You Glory', cursive;
 
   /* fixes default padding on websites */
   padding: 0px;
@@ -67,6 +67,6 @@ a {
 #main_content{
   text-align: center;
   max-width: 100%;
-  margin-bottom: 5px;
-  margin-left: 700px;
+  margin-top: 250px;
+  margin-left: 800px;
 }
