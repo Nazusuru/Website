@@ -1,5 +1,46 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  overflow: scroll;
+}
+
+#intro {
+  height: 100%;
+}
+
+#intro_container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+#school {
+  height: 100%;
+}
+
+#school_container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+#projects {
+  height: 100%;
+}
+
+#projects_container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+#fun {
+  height: 100%;
+}
+
+#fun_container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
 }
 
 /* Split the screen in half */
@@ -11,6 +52,16 @@ body {
   top: 0;
   overflow-x: hidden;
   padding-top: 20px;
+}
+
+a {
+text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+   border-bottom-color: #808080;
+   color: #808080;
 }
 
 /* Control the left side */
@@ -35,7 +86,7 @@ body {
 .main_content {
   font-size: 20px;
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 18%;
   right: 10%;
   line-height: 30px;
@@ -53,4 +104,11 @@ body {
   transform: translate(-50%,-50%);
   width: auto;
   min-width: 100%;
+}
+
+/* Text stuff */
+
+.vmw {
+  font-weight: bold;
+  color: #006699;
 }
