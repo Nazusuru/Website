@@ -1,6 +1,13 @@
+html {
+  height: 100%;
+  min-height: 100%;
+}
 body {
   font-family: 'Source Sans Pro', sans-serif;
   overflow: scroll;
+  height: 100%;
+  min-height: 100%;
+  margin: 0px;
 }
 
 #intro {
@@ -10,7 +17,6 @@ body {
 #intro_container {
   height: 100%;
   width: 100%;
-  position: fixed;
 }
 
 #school {
@@ -20,7 +26,6 @@ body {
 #school_container {
   height: 100%;
   width: 100%;
-  position: fixed;
 }
 
 #projects {
@@ -30,7 +35,6 @@ body {
 #projects_container {
   height: 100%;
   width: 100%;
-  position: fixed;
 }
 
 #fun {
@@ -40,18 +44,55 @@ body {
 #fun_container {
   height: 100%;
   width: 100%;
-  position: fixed;
 }
 
-/* Split the screen in half */
-.split {
+/* Control the left side */
+.split_left {
   height: 100%;
   width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+/* Control the right side */
+.split_right {
+  height: 100%;
+  width: 50%;
+  float: left;
+  background-image: url("../../images/temp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.main_header {
+  font-size: 30px;
+  position: relative;
+  top: 28%;
+  text-align: center;
+}
+
+.main_content {
+  font-size: 20px;
+  position: relative;
+  width: 85%;
+  top: 28%;
+  text-align: center;
+  line-height: 30px;
+}
+
+
+/* Style the image inside the centered container, if needed */
+
+/* Text stuff */
+
+h2 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 
 a {
@@ -64,51 +105,13 @@ a:hover {
    color: #808080;
 }
 
-/* Control the left side */
-.left {
-  left: 0;
-}
-
-/* Control the right side */
-.right {
-  right: 0;
-  background-color: red;
-}
-
-.main_header {
-  font-size: 30px;
-  position: absolute;
-  top: 20%;
-  left: 18%;
-  text-align: center;
-}
-
-.main_content {
-  font-size: 20px;
-  position: absolute;
-  top: 40%;
-  left: 18%;
-  right: 10%;
-  line-height: 30px;
-}
-
-
-/* Style the image inside the centered container, if needed */
-.centered img {
-  display: block;
-  height: auto;
-  min-height: 100%;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  width: auto;
-  min-width: 100%;
-}
-
-/* Text stuff */
-
 .vmw {
   font-weight: bold;
   color: #006699;
+}
+
+.top_text {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 5%;
 }
