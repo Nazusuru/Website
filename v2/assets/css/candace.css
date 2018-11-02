@@ -121,7 +121,7 @@ a:hover {
   text-align: center;
   font-size: 15px;
   font-weight: bold;
-  margin-top: 7%;
+  margin-top: 6%;
 }
 
 .dc {
@@ -149,10 +149,25 @@ a:hover {
   font-family: 'Source Sans Pro', sans-serif;
   color: black;
   width: 80%;
-  margin-top: 10%;
+  margin-top: 8%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 27px;
+}
+
+.write {
+  color: #4b9bd0;
+  font-weight: bold;
+}
+
+.ai {
+  color: #0033cc;
+  font-weight: bold;
+}
+
+.teach {
+  color: #5385c1;
+  font-weight: bold;
 }
