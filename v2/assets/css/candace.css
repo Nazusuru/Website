@@ -15,6 +15,7 @@ body {
 h2 {
   margin-block-start: 0em;
   margin-block-end: 0em;
+  overflow: auto;
 }
 
 a {
@@ -170,4 +171,21 @@ a:hover {
 .teach {
   color: #5385c1;
   font-weight: bold;
+}
+
+/* Fun/last page */
+.fun_columns {
+  width: 100%;
+  overflow: auto;
+}
+.music {
+  color: #1ed760;
+  font-weight: bold;
+}
+
+.end {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
 }
