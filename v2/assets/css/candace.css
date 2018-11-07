@@ -19,13 +19,19 @@ h2 {
 }
 
 a {
-text-decoration: none;
+  text-decoration: none;
+  color: black;
 }
 
 a:hover {
    text-decoration: underline;
    border-bottom-color: #808080;
    color: #808080;
+}
+
+p {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
 }
 
 /* Sections */
@@ -36,18 +42,76 @@ a:hover {
 }
 
 #school {
-  height: 100%;
+  margin-top: 2%;
+  height: 98%;
   width: 100%;
+  overflow: scroll;
 }
 
 #projects {
-  height: 100%;
+  margin-top: 2%;
+  height: 98%;
   width: 100%;
 }
 
 #fun {
-  height: 100%;
+  margin-top: 2%;
+  height: 98%;
   width: 100%;
+}
+
+/* Column CSS */
+
+.columns {
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
+  text-align: center;
+}
+
+.top_text {
+  font-family: 'Karla', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  /* margin-top: 2%; */
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  align-items: center;
+}
+
+.image {
+  max-height: 30%;
+  max-width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9%;
+}
+
+.tagline {
+  font-family: 'Karla', sans-serif;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 6%;
+}
+
+.desc {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  width: 80%;
+  margin-top: 8%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 27px;
 }
 
 /* Intro/first page */
@@ -58,7 +122,6 @@ a:hover {
   float: left;
   display: flex;
   flex-direction: column;
-
   align-items: center;
 }
 
@@ -74,6 +137,7 @@ a:hover {
 }
 
 .main_header {
+  font-family: 'Karla', sans-serif;
   font-size: 30px;
   position: relative;
   top: 28%;
@@ -84,7 +148,7 @@ a:hover {
   font-size: 20px;
   position: relative;
   width: 85%;
-  top: 28%;
+  top: 30%;
   text-align: center;
   line-height: 30px;
 }
@@ -95,35 +159,6 @@ a:hover {
 }
 
 /* School/second page */
-.top_text {
-  font-size: 30px;
-  text-align: center;
-  margin-top: 2%;
-}
-
-.column {
-  float: left;
-  width: 33.33%;
-  align-items: center;
-}
-
-.image {
-  max-height: 30%;
-  max-width: 30%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 7%;
-}
-
-.tagline {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-size: 15px;
-  font-weight: bold;
-  margin-top: 6%;
-}
 
 .dc {
   font-family: 'Roboto Mono', monospace;
@@ -146,18 +181,6 @@ a:hover {
   color: #9ad4a9;
 }
 
-.desc {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: black;
-  width: 80%;
-  margin-top: 8%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-size: 18px;
-  line-height: 27px;
-}
-
 .write {
   color: #4b9bd0;
   font-weight: bold;
@@ -173,11 +196,40 @@ a:hover {
   font-weight: bold;
 }
 
-/* Fun/last page */
-.fun_columns {
-  width: 100%;
-  overflow: auto;
+/* Projects/third page */
+
+.list {
+  margin-top: 5%;
 }
+
+.left {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 22px;
+  font-weight: bold;
+  width: 30%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right {
+  width: 70%;
+  float: left;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Fun/last page */
+
+.vlogs {
+  color: #ff0000;
+  font-weight: bold;
+}
+
 .music {
   color: #1ed760;
   font-weight: bold;
@@ -187,5 +239,30 @@ a:hover {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1%;
+  margin-top: 4%;
 }
+
+.talk {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
+}
+
+.contact {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  margin-top: 2%;
+}
+
+.links {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+}
+
+.creds {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
+  float: right;
+  margin-right: 2%;
+  margin-top: 0%;
+}
+
